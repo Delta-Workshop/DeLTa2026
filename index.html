@@ -91,19 +91,30 @@
         }
 
         .container p {
+            margin: 10px 0; /* 缩小段落之间的间距 */
             font-size: 1.2rem;
             line-height: 1.8;
             text-align: justify; /* 段落两端对齐，提升美观度 */
             margin-bottom: 20px;
-            color: #555;  
+            color: #333;  
         }
 
         .container ol, .container ul {
             text-align: left;
-            margin: 30px auto;
+            margin: 10px 0; /* 缩小上下间距 */
             max-width: 800px;
-            padding-left: 20px;
+            padding-left: 30px; /* 增加左边距，区分段落 */
         }
+
+        .container ol li {
+            margin-bottom: 8px; /* 增加列表项间距，提升层次感 */
+            line-height: 1.5; /* 列表行间距 */
+        }
+
+        .Description em {
+            color: #222; /* 调整斜体文本颜色，使其更加突出 */
+        }
+
 
         /* 增加容器背景色和边框 */
         .Description {
