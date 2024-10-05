@@ -7,7 +7,7 @@
     <title>Deep Generative Model in Machine Learning: Theory, Principle and Efficacy</title>
     <style>
         body { 
-            font-family: 'Helvetica', sans-serif; /* Changed font to Helvetica */
+            font-family: 'Helvetica', sans-serif; /* Professional clean font */
             margin: 0; 
             padding: 0; 
             background-color: #f4f4f4;
@@ -70,25 +70,41 @@
             background-color: #0056b3; /* Darker blue on hover */
         }
 
+        /* Centering content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .container h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .container ol, .container ul {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 900px;
+            padding-left: 20px;
+        }
+
         /* Overview Section */
         .overview {
             background-color: #f0f4fa;
             padding: 60px 20px;
             text-align: center;
-        }
-
-        .overview h2 {
-            font-size: 2.8rem;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .overview p {
-            font-size: 1.3rem;
-            color: #555;
-            max-width: 900px;
-            margin: 20px auto;
-            line-height: 1.8;
         }
 
         footer {
@@ -124,273 +140,55 @@
         </div>
     </div>
 
-    </section>
-
     <div class="container">
-        <article>
-            <section id="home" class="Description">
-                <h2>Description</h2>
+        <section id="home" class="Description">
+            <h2>Description</h2>
+            <p>Deep Generative Models (DGMs) have significantly advanced and empowered artificial intelligence (AI) over the past decade. From variational autoencoders to generative adversarial networks, flow-based models, and most recently diffusion models, DGMs continue to revolutionize the field of AI.</p>
+            <p>Despite the tremendous progress in the development of DGMs, significant challenges remain in both theoretical foundations and practical applications.</p>
+            <p>The current <em>theoretical</em> frameworks fall short of providing sustainable and practical principles for DGMs due to:</p>
+            <ol>
+                <li>A considerable gap between theoretical assumptions and real-world practices, making it difficult to reliably describe and predict the behavior of DGMs in practical settings. </li>
+                <li>The rapid evolution of AI paradigms—such as generative adversarial networks and diffusion models—which frequently shift the focus of theoretical research, leaving gaps in the understanding of newer architectures.</li>
+            </ol>
+            <p>On the <em>algorithmic</em> front, DGMs face critical issues related to computational efficiency and scalability. As models grow in complexity and size, they require increasingly large datasets and computational resources, which makes training and deployment a significant challenge.</p>
+            <p>This workshop will center around these challenges, aiming to bring together experts from learning theory and applications.</p>
+        </section>
 
-                <p>Deep Generative Models (DGMs) have significantly advanced and empowered artificial intelligence (AI) over the past decade. From variational autoencoders to generative adversarial networks, flow-based models, 
-                    and most recently diffusion models, DGMs continue to revolutionize the field of AI.
-                    Despite the tremendous progress in the development of DGMs, significant challenges remain in both theoretical foundations and practical applications.</p>
+        <section id="topics" class="Topics">
+            <h2>Topics</h2>
+            <p>Theory topics include, but are not limited to:</p>
+            <ul>
+                <li>Expressivity of deep generative models: investigate the expressivity of deep generative models and their performance variations across different datasets</li>
+                <li>Optimization and generalization of deep generative models</li>
+                <li>Solving stochastic processes for deep generative models</li>
+                <li>Model Stability and Convergence Analysis in DGMs</li>
+                <li>Implicit Bias and Regularization in Generative Models</li>
+                <li>Robustness and Generalization Boundaries of Generative Models</li>
+                <li>Latent Space Geometry and Manifold Learning</li>
+            </ul>
 
-                <p>The current <em>theoretical</em> frameworks fall short of providing sustainable and practical principles for DGMs due to: 
-                    <ol>
-                        <li>A considerable gap between theoretical assumptions and real-world practices, making it difficult to reliably describe and predict the behavior of DGMs in practical settings. </li>
-                        <li>The rapid evolution of AI paradigms—such as generative adversarial networks and diffusion models—which frequently shift the focus of theoretical research, leaving gaps in the understanding of newer architectures</li>
-                    </ol>
+            <p>Application areas include, but are not limited to:</p>
+            <ul>
+                <li>Computer vision: image and video generation</li>
+                <li>Trustworthy AI: safety, security, privacy, interpretability, etc.</li>
+                <li>Reinforcement learning: model-based and model-free learning</li>
+                <li>Natural language processing: large language models, text generation, etc.</li>
+                <li>Multimodal machine learning</li>
+                <li>AI for science: biology, chemistry, materials, etc.</li>
+            </ul>
+        </section>
 
-                <p>On the <em>algorithmic</em> front, DGMs face critical issues related to computational efficiency and scalability. 
-                    As models grow in complexity and size, they require increasingly large datasets and computational resources, 
-                    which makes training and deployment a significant challenge. In particular:</p>
-                <ol>
-                    <li>Training instability and convergence issues, especially in adversarial settings, can result in unreliable model outputs. </li>
-                    <li>Scaling DGMs for high-resolution or multi-modal data is computationally intensive and often leads to a trade-off between model accuracy and training time.</li>
-                    <li>Practical applications, such as generative tasks in high-dimensional spaces or large-scale deployments in industry, 
-                        demand more robust solutions for ensuring efficiency without compromising the quality of generated data.</li>
-                </ol>
-
-                <p>This workshop, “Deep Generative Model in Machine Learning: Theories, Principles and Efficacy (DeLTa) will center around the abovementioned challenges. 
-                We aim to bring together experts from learning theory and applications, and foster collaborations on two broad and transformative questions in DGM:</p>
-
-                <p><em>Q1: How can current deep learning theory be leveraged to understand and design advanced generative models?</em></p>
-                
-                <p><em>Q2: What innovative strategies can be developed to improve the practical efficiency and reliability of DGMs in real-world applications?</em></p>
-
-            </section>
-
-            <section id="topics" class="Topics">
-                <h2>Topics</h2>
-                <p>Theory topics that can help predict and design deep learning (include but not limited to):</p>
-                <ul>
-                    <li>Expressivity of deep generative models: investigate the expressivity of deep generative models and their performance variations across different datasets</li>
-                    <li>Optimization and generalization of deep generative models: study optimization strategies and generalization properties of generative models, emphasizing the performance of optimization algorithms in complex model architectures</li>
-                    <li>Solving stochastic processes for deep generative models: delve into solving stochastic differential equations (SDEs) or partial differential equations (PDEs) for stochastic processes in generative models (e.g., diffusion models)</li>
-                    <li>Model Stability and Convergence Analysis in DGMs: investigate the stability and convergence properties of generative models (e.g., GANs, VAEs, Flow-based Models, and Diffusion Models) during training</li>
-                    <li>Implicit Bias and Regularization in Generative Models: explore implicit biases present in generative models and their impact on generalization. Study the effectiveness of explicit and implicit regularization techniques</li>
-                    <li>Robustness and Generalization Boundaries of Generative Models: analyze the robustness boundaries of generative models and their behavior under out-of-distribution scenarios</li>
-                    <li>Latent Space Geometry and Manifold Learning: analyze the geometric structure of the latent space in generative models and its relationship with the input data distribution. Explore how to balance diversity and generation quality in the latent space, and investigate the effectiveness and limitations of different manifold learning techniques in complex data scenarios</li>
-                </ul>
-
-
-                <p>Applications that can be designed by deep learning theory (include but not limited to):</p>
-                <ul>
-                    <li>Computer vision: image generation and video generation</li>
-                    <li>Trustworthy AI: safety, security, privacy, interpretability, robustness, etc.</li>
-                    <li>Reinforcement learning: model-based reinforcement learning, model-free reinforcement learning, world models, etc.</li>
-                    <li>Natural language processing: large language model, in-context learning, reasoning, text generation, audio generation, etc.</li>
-                    <li>Multimodal machine learning: cross-modal learning, integration of multiple modalities, enhanced representation learning, etc.</li>
-                    <li>AI for science: biology, pharmacy, materials, chemistry, physics, financial engineering, scientific computing.</li>
-                </ul>
-
-                
-
-                
-            
-
-            
-
-            <section id="speakers" class="Speakers">
-                
-                <h2>Speakers (A-Z by Last Name) (last updated: 2/28/2024)</h2>  
-<!--                 <div class="Speaker">
-                    <h3><a href="https://sites.google.com/view/yasamanbahri/home" target="_blank">Yasaman Bahri</a></h3>
-                    <p>Research Scientist</p>
-                    <p>Google DeepMind</p>
-                </div> -->
-
-<!--                 <div class="Speaker">
-                    <h3><a href="https://papail.io/" target="_blank">Dimitris Papailiopoulos</a></h3>
-                    <p>Associate Professor</p>
-                    <p>University of Wisconsin-Madison</p>
-                </div> -->
-
-                <div class="Speaker">
-                    <h3><a href="https://kangwooklee.com/" target="_blank">Kangwook Lee [confirmed]</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>University of Wisconsin-Madison</p>
-                </div>
-
-                <div class="Speaker">
-                    <h3><a href="https://cseweb.ucsd.edu/~yaq007/" target="_blank">Yao Qin [confirmed]</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>University of California, Santa Barbara</p>
-                </div>
-
-                <div class="Speaker">
-                    <h3><a href="https://qingqu.engin.umich.edu/" target="_blank">Qing Qu [confirmed]</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>University of Michigan</p>
-                </div>
-
-<!--                 <div class="Speaker">
-                    <h3><a href="https://thegregyang.com/" target="_blank">Greg Yang</a></h3>
-                    <p>Mathematician</p>
-                    <p>xAI</p>
-                </div> -->
-
-                <div class="Speaker">
-                    <h3><a href="http://danroy.org/" target="_blank">Daniel Roy [confirmed]</a></h3>
-                    <p>Research Director, CIFAR Canada AI Chair, Founding Faculty, Vector Institute</p>
-                    <p>Associate Professor, University of Toronto</p>
-                </div>
-
-                <div class="Speaker">
-                    <h3><a href="https://sites.google.com/view/jsulam/" target="_blank">Jeremias Sulam [confirmed]</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>Johns Hopkins University</p>
-                </div>
-
-                <div class="Speaker">
-                    <h3><a href="https://yuandong-tian.com/" target="_blank">Yuandong Tian [confirmed]</a></h3>
-                    <p>Research Scientist and Senior Manager</p>
-                    <p>Meta AI (FAIR)</p>
-                </div>
-
-                <div class="Speaker">
-                    <h3><a href="https://sites.google.com/site/yangyaoqingcmu/" target="_blank">Yaoqing Yang [confirmed]</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>Dartmouth University</p>
-                </div>
-            </section>
-
-            <section id="call" class="location">
-                <h2>Call for Papers</h2>
-
-                <div class="Important Dates">
-                    <h3>Important Dates</h3>
-                    <p>Submission Deadline: May 28th, 2024 (11:59 pm AoE)</p>
-                    <p>Acceptance Notification: June 18th, 2024</p>
-                    <p>Workshop Date: July 26th or July 27th, 2024</p>
-                </div>
-            </section>
-
-            <section id="schedule">
-                <h2>Schedule</h2>
-                <p>All times are in Vienna Time (GMT+1).</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Vienna Time (GMT+1)</th>
-                            <th>Event</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8:20-8:30</td>
-                            <td>Opening Remarks</td>
-                        </tr>
-                        <tr>
-                            <td>8:30-9:10</td>
-                            <td>Invited Talk 1</td>
-                        </tr>
-                        <tr>
-                            <td>9:10-9:50</td>
-                            <td>Invited Talk 2</td>
-                        </tr>
-                        <tr>
-                            <td>9:50-10:30</td>
-                            <td>Invited Talk 3</td>
-                        </tr>
-                         <tr>
-                            <td>10:30-11:00</td>
-                            <td>Contributed Talks</td>
-                        </tr>
-                        <tr>
-                            <td>11:00-12:00</td>
-                            <td>Poster Session</td>
-                        </tr>
-                       
-                        <tr>
-                            <td>12:00-13:30</td>
-                            <td>Lunch Break</td>
-                        </tr>
-                        <tr>
-                            <td>13:30-14:10</td>
-                            <td>Invited Talk 4</td>
-                        </tr>
-                        <tr>
-                            <td>14:10-14:50</td>
-                            <td>Invited Talk 5</td>
-                        </tr>
-                        <tr>
-                            <td>14:50-15:20</td>
-                            <td>Contributed Talks</td>
-                        </tr>
-                        <tr>
-                            <td>15:20-16:20</td>
-                            <td>Poster/Break</td>
-                        </tr>
-                        <tr>
-                            <td>16:20-17:00</td>
-                            <td>Invited Talk 6</td>
-                        </tr>
-                        <tr>
-                            <td>17:00-17:40</td>
-                            <td>Invited Talk 7</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-                </section>
-
-
-            <section id="organizers" class="Organizers">
-                <h2>Organizers </h2>
-                <div class="Organizers">
-                    <h3><a href="https://chenwydj.github.io/" target="_blank">Wuyang Chen</a></h3>
-                    <p>Incoming tenure-track Assistant Professor</p>
-                    <p>Simon Fraser University</p>
-                </div>
-                
-                <div class="Organizers">
-                    <h3><a href="https://weihuang05.github.io/" target="_blank">Wei Huang</a></h3>
-                    <p>Research Scientist</p>
-                    <p>RIKEN AIP</p>
-                </div>
-
-                <div class="Organizers">
-                    <h3><a href="https://cecilialeiqi.github.io/" target="_blank">Qi Lei</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>New York University</p>
-                </div>
-
-                <div class="Organizers">
-                    <h3><a href="https://gkdz.org/" target="_blank">Gintare Karolina Dziugaite</a></h3>
-                    <p>Senior Research Scientist, Google Brain</p>
-                    <p>Adjunct Professor, McGill University</p>
-                </div>
-
-<!--                 <div class="Organizers">
-                    <h3><a href="https://boris-hanin.github.io/" target="_blank">Boris Hanin</a></h3>
-                    <p>Assistant Professor</p>
-                    <p>Princeton University</p>
-                </div> -->
-
-<!--                 <div class="Organizers">
-                    <h3><a href="https://vita-group.github.io/" target="_blank">Atlas Wang</a></h3>
-                    <p>Associate Professor</p>
-                    <p>The University of Texas at Austin</p>
-                </div> -->
-                
-                <div class="Organizers">
-                    <h3><a href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank">Taiji Suzuki</a></h3>
-                    <p>Associate Professor</p>
-                    <p>University of Tokyo & RIKEN AIP</p>
-                </div>
-
-                <div class="Organizers">
-                    <h3><a href="https://www.stat.berkeley.edu/~mmahoney/" target="_blank">Michael Mahoney</a></h3>
-                    <p>Professor</p>
-                    <p>University of California at Berkeley</p>
-                </div>
-
-            </section>
-
-
-            
-        </article>
+        <section id="speakers" class="Speakers">
+            <h2>Speakers</h2>
+            <div class="Speaker">
+                <h3><a href="https://kangwooklee.com/" target="_blank">Kangwook Lee</a></h3>
+                <p>Assistant Professor, University of Wisconsin-Madison</p>
+            </div>
+            <div class="Speaker">
+                <h3><a href="https://cseweb.ucsd.edu/~yaq007/" target="_blank">Yao Qin</a></h3>
+                <p>Assistant Professor, University of California, Santa Barbara</p>
+            </div>
+        </section>
     </div>
 
     <footer>
