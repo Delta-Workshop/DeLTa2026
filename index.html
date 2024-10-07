@@ -137,20 +137,45 @@
         }
 
 
-        .section-style {
-            background-color: #f9f9f9; /* 设置浅灰色背景 */
-            padding: 20px; /* 增加内边距 */
-            border: 1px solid #ddd; /* 添加浅灰色边框 */
-            border-radius: 8px; /* 增加圆角效果 */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-            margin-bottom: 20px; /* 增加每个 section 之间的间距 */
-        }
-        
-        .container ol li::marker, 
-        .container ul li::marker {
-            color: #ffcc00; /* 使用黄色标记符号，使列表项更加显眼 */
-            font-size: 1.2em; /* 增大标记符号的大小 */
-        }
+.section-style {
+    background-color: #f9f9f9; /* 设置浅灰色背景 */
+    padding: 20px; /* 增加内边距 */
+    border: 1px solid #ddd; /* 添加浅灰色边框 */
+    border-radius: 8px; /* 增加圆角效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    margin-bottom: 20px; /* 增加每个 section 之间的间距 */
+
+    /* Ensuring consistent font size and spacing */
+    font-size: 16px; /* Ensure both sections have the same font size */
+    line-height: 1.6; /* Line spacing for readability */
+    color: #333; /* Text color */
+}
+
+.section-style p, 
+.section-style ul, 
+.section-style ol {
+    margin: 10px 0; /* Ensure consistent margin between paragraphs and lists */
+    padding: 0; /* No extra padding inside the text */
+}
+
+.section-style ol li,
+.section-style ul li {
+    margin-bottom: 8px; /* Ensure list items have consistent spacing */
+    line-height: 1.5; /* Line height for list items */
+}
+
+.section-style h2 {
+    font-size: 2.0rem; /* Adjust the heading size if needed */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Consistent space below headings */
+}
+
+.container ol li::marker, 
+.container ul li::marker {
+    color: #ffcc00; /* 黄色标记符号 */
+    font-size: 1.2em; /* 增大标记符号的大小 */
+}
 
 
 
@@ -193,7 +218,7 @@
 
         <div class="hero-text">
             <header>
-                <h1>Deep Generative Model in Machine Learning: Theory, Principle and Efficacy</h1>
+                <h1>Deep Generative Model in Machine Learning:  Theory, Principle and Efficacy</h1>
             </header>
             <p class="subtitle">The Thirteenth International Conference on Learning Representations</p>
             <p>@Singapore EXPO</p>
