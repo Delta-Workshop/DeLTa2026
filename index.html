@@ -25,9 +25,23 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-image: url('singapore.jpg');
+/*             background-image: url('singapore.jpg');
+            background-size: cover;
+            background-position: center; */
+        }
+
+        /* Background image wrapper */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('singapore.jpg'); /* Your background image */
             background-size: cover;
             background-position: center;
+            opacity: 0.5; /* Adjust this to make the background less visible */
+            z-index: -1; /* Keep it behind the text */
         }
 
         /* Adding an overlay to the background for transparency */
