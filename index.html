@@ -252,19 +252,35 @@
             .organizer {
                 background-color: #444;
                 color: #fff;
-                width: 250px; /* Fixed width */
+                width: 200px; /* Smaller width for better alignment */
                 text-align: center;
                 padding: 20px;
                 border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for card effect */
             }
             
             .profile-pic {
-                width: 100%; /* Full width */
+                width: 100%; /* Full width of container */
+                max-width: 180px; /* Limit the width of the image */
                 height: auto; /* Maintain aspect ratio */
-                object-fit: cover; /* Prevent distortion */
+                object-fit: cover; /* Ensure the image covers the space without distortion */
                 border-radius: 8px;
-                margin-bottom: 15px;
+                margin-bottom: 15px; /* Space between image and name */
+            }
+            
+            .organizer h3 {
+                font-size: 1.2rem;
+                margin: 10px 0 5px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+            }
+            
+            .organizer p {
+                font-size: 1rem;
+                margin: 0;
+                color: #bbb;
+                text-align: center;
             }
     </style>
 </head>
