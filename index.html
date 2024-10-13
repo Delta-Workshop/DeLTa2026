@@ -239,31 +239,33 @@
         }
 
         .organizer-section {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px; /* Space between organizer blocks */
-            background-color: #333; /* Dark background similar to the image */
-            padding: 20px;
-        }
-        
-        .organizer {
-            background-color: #444; /* Dark block background */
-            color: #fff; /* White text */
-            width: 250px; /* Set a fixed width for each organizer block */
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        
-        .profile-pic {
-            width: 80%; /* Full width */
-            height: 250px; /* Fixed height for uniformity */
-            object-fit: cover; /* Ensure the image covers the area without distortion */
-            border-radius: 8px; /* Slight rounding for images */
-            margin-bottom: 15px; /* Space between image and name */
-        }
-
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                background-color: #333;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .organizer {
+                background-color: #444;
+                color: #fff;
+                width: 250px; /* Fixed width */
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+            .profile-pic {
+                width: 100%; /* Full width */
+                height: auto; /* Maintain aspect ratio */
+                object-fit: cover; /* Prevent distortion */
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
     </style>
 </head>
 <body>
