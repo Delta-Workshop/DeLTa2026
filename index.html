@@ -238,18 +238,30 @@
             margin-top: 20px;
         }
 
-        .Organizer {
-            display: block; /* Stacks image and text vertically */
-            text-align: center; /* Centers content */
-            margin-bottom: 20px;
+        .organizer-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between organizer blocks */
+            background-color: #333; /* Dark background similar to the image */
+            padding: 20px;
+        }
+        
+        .organizer {
+            background-color: #444; /* Dark block background */
+            color: #fff; /* White text */
+            width: 250px; /* Set a fixed width for each organizer block */
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
         }
         
         .profile-pic {
-            width: 80px;  /* Smaller width */
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 10px; /* Space between image and name */
-            object-fit: cover;
+            width: 100%; /* Full width */
+            height: 250px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 8px; /* Slight rounding for images */
+            margin-bottom: 15px; /* Space between image and name */
         }
 
     </style>
@@ -349,7 +361,7 @@
         </section>
 
 
-        <section id="organizers" class="Organizers">
+        <section id="organizers" class="organizer-section">
             <h2>Organizers</h2>
             <div class="Organizers">
                 <h3><a href="https://weihuang05.github.io/" target="_blank">Wei Huang</a></h3>
