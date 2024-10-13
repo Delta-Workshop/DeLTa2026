@@ -239,49 +239,46 @@
         }
 
         .organizer-section {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 20px;
-                background-color: #333;
-                padding: 20px;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .organizer {
-                background-color: #444;
-                color: #fff;
-                width: 200px; /* Smaller width for better alignment */
-                text-align: center;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for card effect */
-            }
-            
-            .profile-pic {
-                width: 100%; /* Full width of container */
-                max-width: 180px; /* Limit the width of the image */
-                height: auto; /* Maintain aspect ratio */
-                object-fit: cover; /* Ensure the image covers the space without distortion */
-                border-radius: 8px;
-                margin-bottom: 15px; /* Space between image and name */
-            }
-            
-            .organizer h3 {
-                font-size: 1.2rem;
-                margin: 10px 0 5px;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-            }
-            
-            .organizer p {
-                font-size: 1rem;
-                margin: 0;
-                color: #bbb;
-                text-align: center;
-            }
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #333;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .organizer {
+            background-color: #444;
+            color: #fff;
+            width: 200px; /* Consistent width for all organizer blocks */
+            text-align: center; /* Center text inside the block */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-pic {
+            width: 50px; /* Smaller width */
+            height: 50px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure the image fills the space without distortion */
+            border-radius: 50%; /* Circular profile picture */
+            margin-bottom: 10px; /* Space between image and name */
+        }
+        
+        .organizer h3 {
+            font-size: 1.2rem;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .organizer p {
+            font-size: 1rem;
+            margin: 0;
+            color: #bbb;
+        }
     </style>
 </head>
 <body>
