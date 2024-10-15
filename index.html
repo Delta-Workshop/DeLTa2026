@@ -103,7 +103,7 @@
 
         /* Centering content */
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -240,9 +240,9 @@
 
         .organizer-section {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
+            gap: 20px; /* Add space between organizers */
             background-color: #333;
             padding: 20px;
             max-width: 1200px;
@@ -252,19 +252,35 @@
         .organizer {
             background-color: #444;
             color: #fff;
-            width: 200px; /* Consistent width for all organizer blocks */
-            text-align: center; /* Center text inside the block */
+            width: calc(33.33% - 40px); /* Adjust the width to fit three organizers in a row, considering the gap */
+            text-align: center;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Add margin at the bottom for spacing */
         }
         
+        /* Ensure images are centered above the names */
         .profile-pic {
-            width: 50px; /* Smaller width */
-            height: 50px; /* Fixed height for consistency */
-            object-fit: cover; /* Ensure the image fills the space without distortion */
-            border-radius: 50%; /* Circular profile picture */
-            margin-bottom: 10px; /* Space between image and name */
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Media query for smaller screens to adjust the number of organizers per row */
+        @media (max-width: 768px) {
+            .organizer {
+                width: calc(50% - 40px); /* For smaller screens, display two organizers per row */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .organizer {
+                width: 100%; /* For very small screens, display one organizer per row */
+            }
         }
         
         .organizer h3 {
@@ -385,6 +401,7 @@
             <h2>Organizers</h2>
         
             <div class="organizer">
+                <img src="path-to-image1.jpg" alt="Wei Huang" class="profile-pic">
                 <h3><a href="https://weihuang05.github.io/" target="_blank">Wei Huang</a></h3>
                 <p>Research Scientist, RIKEN AIP</p>
             </div>
