@@ -264,7 +264,7 @@
             display: flex;
             flex-wrap: wrap;
 /*             justify-content: center; */
-            justify-content: space-between;
+            justify-content: flex-start;
 /*             gap: 20px;  */
         }
 
@@ -280,11 +280,9 @@
             margin-bottom: 20px; 
         } */
         .organizer {
-/*             width: calc(33.33% - 40px); */
-           width: calc(33.333% - 20px); /* Subtracting space for margins */
+            width: calc(33.333% - 20px); /* Adjust width considering margins */
             margin-bottom: 20px;
-            margin-right: 10px;
-            margin-left: 10px;
+            margin-right: 30px; /* Space between items */
             text-align: center;
             padding: 20px;
             border-radius: 10px;
@@ -303,15 +301,17 @@
         }
         
         /* Media query for smaller screens to adjust the number of organizers per row */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .organizer {
-                width: calc(50% - 40px); /* For smaller screens, display two organizers per row */
+                width: calc(50% - 20px); /* Two organizers per row */
             }
         }
         
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             .organizer {
-                width: 100%; /* For very small screens, display one organizer per row */
+                width: 100%; /* One organizer per row */
+                margin-right: 0;
+                margin-left: 0;
             }
         }
         
