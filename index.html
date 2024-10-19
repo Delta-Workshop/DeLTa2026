@@ -309,13 +309,18 @@
             .organizer {
                 width: calc(50% - 20px); /* Two organizers per row */
             }
+            .organizer:nth-child(2n) {
+                margin-right: 0; /* Remove right margin from every second item */
+            }
+            .organizer:nth-child(3n) {
+                margin-right: 30px; /* Reset margin for items that were previously affected */
+            }
         }
         
         @media (max-width: 600px) {
             .organizer {
                 width: 100%; /* One organizer per row */
                 margin-right: 0;
-                margin-left: 0;
             }
         }
         
