@@ -263,8 +263,9 @@
         .organizer-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px; /* 增加组织者之间的间距 */
+/*             justify-content: center; */
+            justify-content: space-between;
+/*             gap: 20px;  */
         }
 
         
@@ -280,12 +281,14 @@
         } */
         .organizer {
 /*             width: calc(33.33% - 40px); */
-            width: calc((100% - 40px) / 3);
+           width: calc(33.333% - 20px); /* Subtracting space for margins */
+            margin-bottom: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
-            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  Removed box-shadow */
-            margin-bottom: 20px;
+            box-sizing: border-box;
         }
         
         /* Ensure images are centered above the names */
