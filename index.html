@@ -467,70 +467,171 @@
 
 <section id="schedule" class="section-style">
   <h2>Schedule</h2>
+  <p style="text-align:center; margin-bottom: 5px; color:#555;">April 27, 2026 &mdash; Rio de Janeiro, Brazil</p>
   <table style="width:100%; border-collapse: collapse; font-size: 17px; line-height: 1.6; color: #333;">
     <thead>
       <tr style="background-color: #e8e8e8;">
-        <th style="border: 1px solid #ccc; padding: 12px; text-align: center;">Brasília Time (GMT-3)</th>
+        <th style="border: 1px solid #ccc; padding: 12px; text-align: center; width: 30%;">Brasília Time (GMT&minus;3)</th>
         <th style="border: 1px solid #ccc; padding: 12px; text-align: center;">Event</th>
       </tr>
     </thead>
     <tbody>
+
+      <!-- Opening Remarks -->
       <tr>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:00 – 9:10</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Opening Remarks</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:00 &mdash; 9:10</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+          <strong>Opening Remarks</strong><br>
+          <span style="color: #555;">Kenji Fukumizu</span>
+        </td>
       </tr>
+
+      <!-- René Vidal -->
       <tr style="background-color: #f9f9f9;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:10 – 9:40</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">René Vidal</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:10 &mdash; 9:40</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>René Vidal</strong><br>
+            <em>How Geometry Shapes Optimization in Deep Generative Models</em>
+          </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              Deep generative models have achieved remarkable empirical success, but their theoretical foundations remain poorly understood. This talk presents recent progress on the geometry and optimization of modern generative models, focusing on three representative settings. First, generative model inversion is analyzed with linear convergence of gradient descent established under two geometric conditions on the loss landscape, avoiding unrealistic random-weight assumptions. Second, transformer-based diffusion models trained on multi-token Gaussian mixture data are studied, showing that gradient descent converges to the Bayes-optimal denoiser and that self-attention approximates the optimal MMSE estimator. Third, Parsimonious Flow Matching (PFM) is introduced, which replaces the standard isotropic Gaussian latent with a multimodal mixture aligned with data structure, yielding better-conditioned optimization and faster convergence. Together, these results highlight how geometric structure in data and latent spaces enables sharper theoretical guarantees and more efficient generative modeling.
+            </p>
+          </details>
+        </td>
       </tr>
+
+      <!-- Sitan Chen -->
       <tr>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:40 – 10:10</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Sitan Chen</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:40 &mdash; 10:10</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Sitan Chen</strong><br>
+            <em>Theory for Discrete Diffusions: Parallel Decoding and Variable-Length Generation</em>
+          </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              Compared to autoregressive models and even to continuous diffusions, diffusion language models offer a fundamentally different design space for crafting efficient and flexible generation processes. This talk discusses work along two axes of this design space: parallel decoding and variable-length generation. In the first half, an exact characterization of the optimal inference schedule for masked diffusion models is given, which depends on a certain "information profile" specific to the data distribution. From this characterization, simple schedules are derived that enable sampling provably more efficiently than autoregressive models for any distribution with bounded correlations. In the second half, FlexMDM is presented, a theoretically principled and empirically lightweight method for equipping diffusion language models with the ability to generate sequences of arbitrary length, while provably preserving their any-order generation capabilities.
+            </p>
+          </details>
+        </td>
       </tr>
+
+      <!-- Poster / Break -->
       <tr style="background-color: #fff3cd;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">10:10 – 11:00</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">10:10 &mdash; 11:00</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Poster / Break</td>
       </tr>
+
+      <!-- Nisha Chandramoorthy -->
       <tr style="background-color: #f9f9f9;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:00 – 11:30</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Nisha Chandramoorthy</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:00 &mdash; 11:30</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Nisha Chandramoorthy</strong><br>
+            <em>Toward Physical Generative Models</em>
+          </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              In any generative model, the generated samples have a different distribution than the data distribution, due to inevitable learning errors. Moreover, this discrepancy, and metrics for evaluating the generated samples, are hard to characterize in high dimensions, motivating the need to understand how learning errors affect the reproducibility of certain "features" of the generated distributions. A first question is whether generative models produce "physical" samples, i.e., samples whose support is close to that of the true target distribution, despite algorithmic errors. A second question concerns what we term a lazy generative model: given samples from the target, we apply an arbitrary random dynamical system such that the distribution at finite time is approximately Gaussian. In principle, this noising process cannot be exactly inverted to recover target samples&mdash;but under what conditions can we approximately recover samples from a nearby distribution? The first part is joint work with Adriaan de Clercq (UChicago) and the second with Georg Gottwald (U Sydney).
+            </p>
+          </details>
+        </td>
       </tr>
+
+      <!-- Oral Presentations -->
       <tr>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:30 – 12:00</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:30 &mdash; 12:00</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Oral Presentations</td>
       </tr>
+
+      <!-- Lunch -->
       <tr style="background-color: #fff3cd;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">12:00 – 13:30</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">12:00 &mdash; 13:30</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Lunch</td>
       </tr>
+
+      <!-- Atsushi Nitanda -->
       <tr style="background-color: #f9f9f9;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">13:30 – 14:00</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Atsushi Nitanda</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">13:30 &mdash; 14:00</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Atsushi Nitanda</strong><br>
+            <em>TBD</em>
+          </div>
+        </td>
       </tr>
+
+      <!-- Zahra Kadkhodaie -->
       <tr>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:00 – 14:30</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Zahra Kadkhodaie</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:00 &mdash; 14:30</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Zahra Kadkhodaie</strong><br>
+            <em>Blind Denoising Diffusion Models (BDDM) and Adaptive Sampling Algorithm</em>
+          </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              Denoising diffusion models (DDMs) are state-of-the-art for numerous tasks pertaining to image generation and inverse problems. Yet many aspects of the training and sampling pipeline remain poorly understood. For instance, the necessity of noise conditioning has been particularly elusive, forcing practitioners to incorporate unnatural noise embeddings into neural network architectures and use ad hoc noise schedules during sampling. Motivated to remove these inconsistencies, a complete theory for blind denoising diffusion models (BDDMs) is provided: a variant of DDMs where the noise amplitude is not passed into the neural network during training nor sampling. The correctness of BDDMs as a sampling algorithm is justified under the sole assumption of low intrinsic dimensionality of the underlying data distribution relative to the ambient dimension. This assumption arises through the introduction of the Bayesian problem of estimating noise levels through a single noisy sample, which might be of independent interest. The performance of BDDMs is compared to standard DDMs in a variety of settings, showcasing the benefits of an adaptive scheme rigorously justified by theoretical analysis.
+            </p>
+          </details>
+        </td>
       </tr>
+
+      <!-- Poster / Break -->
       <tr style="background-color: #fff3cd;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:30 – 15:20</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:30 &mdash; 15:20</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Poster / Break</td>
       </tr>
+
+      <!-- Arnaud Doucet -->
       <tr style="background-color: #f9f9f9;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:20 – 15:50</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Arnaud Doucet</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:20 &mdash; 15:50</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Arnaud Doucet</strong><br>
+            <em>Unsupervised Source Separation via Generative Modeling</em>
+          </div>
+        </td>
       </tr>
+
+      <!-- Jannis Chemseddine -->
       <tr>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:50 – 16:20</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Jannis Chemseddine</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:50 &mdash; 16:20</td>
+        <td style="border: 1px solid #ccc; padding: 10px 15px;">
+          <div style="text-align: center; margin-bottom: 6px;">
+            <strong>Jannis Chemseddine</strong><br>
+            <em>Generative Flows from 1D Processes and Adapting Noise to Data</em>
+          </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              The aim of the talk is twofold. First, interesting noising processes besides Brownian motion are examined: the physics-inspired Kac process and the MMD gradient flow, leading to compactly supported measure curves and a better regularity of the flow matching velocity field. Second, a "quantile toolbox" for building generative models is presented: a unifying theory and a practical toolkit that turns latent noise selection into a data-driven design element.
+            </p>
+          </details>
+        </td>
       </tr>
+
+      <!-- Oral Presentations -->
       <tr style="background-color: #f9f9f9;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:20 – 16:50</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:20 &mdash; 16:50</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Oral Presentations</td>
       </tr>
+
+      <!-- Awards & Closing Remarks -->
       <tr style="background-color: #fff3cd;">
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:50 – 17:00</td>
-        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Awards &amp; Closing Remarks</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:50 &mdash; 17:00</td>
+        <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+          <strong>Awards &amp; Closing Remarks</strong><br>
+          <span style="color: #555;">Mingyuan Bai</span>
+        </td>
       </tr>
+
     </tbody>
   </table>
 </section>
