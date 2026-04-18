@@ -464,7 +464,7 @@
 
 
 
-
+ 
 <section id="schedule" class="section-style">
   <h2>Schedule</h2>
   <p style="text-align:center; margin-bottom: 5px; color:#555;">April 27, 2026 &mdash; Rio de Janeiro, Brazil</p>
@@ -476,7 +476,7 @@
       </tr>
     </thead>
     <tbody>
-
+ 
       <!-- Opening Remarks -->
       <tr>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:00 &mdash; 9:10</td>
@@ -485,7 +485,7 @@
           <span style="color: #555;">Kenji Fukumizu</span>
         </td>
       </tr>
-
+ 
       <!-- René Vidal -->
       <tr style="background-color: #f9f9f9;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:10 &mdash; 9:40</td>
@@ -502,7 +502,7 @@
           </details>
         </td>
       </tr>
-
+ 
       <!-- Sitan Chen -->
       <tr>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">9:40 &mdash; 10:10</td>
@@ -519,13 +519,13 @@
           </details>
         </td>
       </tr>
-
+ 
       <!-- Poster / Break -->
       <tr style="background-color: #fff3cd;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">10:10 &mdash; 11:00</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Poster / Break</td>
       </tr>
-
+ 
       <!-- Nisha Chandramoorthy -->
       <tr style="background-color: #f9f9f9;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:00 &mdash; 11:30</td>
@@ -542,30 +542,36 @@
           </details>
         </td>
       </tr>
-
+ 
       <!-- Oral Presentations -->
       <tr>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">11:30 &mdash; 12:00</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Oral Presentations</td>
       </tr>
-
+ 
       <!-- Lunch -->
       <tr style="background-color: #fff3cd;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">12:00 &mdash; 13:30</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Lunch</td>
       </tr>
-
+ 
       <!-- Atsushi Nitanda -->
       <tr style="background-color: #f9f9f9;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">13:30 &mdash; 14:00</td>
         <td style="border: 1px solid #ccc; padding: 10px 15px;">
           <div style="text-align: center; margin-bottom: 6px;">
             <strong>Atsushi Nitanda</strong><br>
-            <em>TBD</em>
+            <em>Slowly Annealed Langevin Dynamics: Theory and Applications to Training-Free Guided Generation</em>
           </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              We study Slowly Annealed Langevin Dynamics (SALD), a sampler for tracking a path of moving target distributions and approximating the terminal target through time slowdown. We establish non-asymptotic convergence guarantees via a KL differential inequality, showing that slowdown improves tracking through contraction of intermediate targets and a path-complexity term captured by an entropic action. Motivated by training-free guided generation with pretrained score-based generative models, we further introduce Velocity-Aware SALD (VA-SALD), which explicitly incorporates the underlying marginal distributions of the pretrained model and uses slowdown to correct the additional deviation induced by guidance. This yields a principled framework for training-free guided generation together with convergence guarantees that clarify the roles of intermediate functional inequalities, path complexity, and guidance bias.
+            </p>
+          </details>
         </td>
       </tr>
-
+ 
       <!-- Zahra Kadkhodaie -->
       <tr>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:00 &mdash; 14:30</td>
@@ -582,13 +588,13 @@
           </details>
         </td>
       </tr>
-
+ 
       <!-- Poster / Break -->
       <tr style="background-color: #fff3cd;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">14:30 &mdash; 15:20</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Poster / Break</td>
       </tr>
-
+ 
       <!-- Arnaud Doucet -->
       <tr style="background-color: #f9f9f9;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:20 &mdash; 15:50</td>
@@ -597,9 +603,15 @@
             <strong>Arnaud Doucet</strong><br>
             <em>Unsupervised Source Separation via Generative Modeling</em>
           </div>
+          <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
+            <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
+            <p style="margin-top: 8px; font-size: 15px;">
+              The goal of single-channel source separation is to reconstruct \(K\) sources given their mixture. In supervised settings where vast amounts of clean source data are available, this challenging, ill-posed problem has been addressed successfully by generative diffusion and flow-based prior models. However, access to such clean source samples is often limited. To bridge this gap, we present an unsupervised flow matching approach for source separation that learns directly from observed mixtures. This method relies on a novel combination of state-of-the-art supervised flow matching and regression-based self-supervised techniques. We provide insights into the objectives optimized by this approach and demonstrate it on image and audio benchmarks.
+            </p>
+          </details>
         </td>
       </tr>
-
+ 
       <!-- Jannis Chemseddine -->
       <tr>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">15:50 &mdash; 16:20</td>
@@ -616,13 +628,13 @@
           </details>
         </td>
       </tr>
-
+ 
       <!-- Oral Presentations -->
       <tr style="background-color: #f9f9f9;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:20 &mdash; 16:50</td>
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">Oral Presentations</td>
       </tr>
-
+ 
       <!-- Awards & Closing Remarks -->
       <tr style="background-color: #fff3cd;">
         <td style="border: 1px solid #ccc; padding: 10px; text-align: center;">16:50 &mdash; 17:00</td>
@@ -631,7 +643,7 @@
           <span style="color: #555;">Mingyuan Bai</span>
         </td>
       </tr>
-
+ 
     </tbody>
   </table>
 </section>
