@@ -642,12 +642,22 @@
         <td style="border: 1px solid #ccc; padding: 10px 15px;">
           <div style="text-align: center; margin-bottom: 6px;">
             <strong>Jannis Chemseddine</strong><br>
-            <em>Generative Flows from 1D Processes and Adapting Noise to Data</em>
+            <em>Spherical Flows for Sampling Discrete Distributions</em>
           </div>
           <details style="text-align: justify; font-size: 15px; color: #444; margin-top: 4px;">
             <summary style="cursor: pointer; color: #337ab7; font-size: 15px;">Show Abstract</summary>
             <p style="margin-top: 8px; font-size: 15px;">
-              The aim of the talk is twofold. First, interesting noising processes besides Brownian motion are examined: the physics-inspired Kac process and the MMD gradient flow, leading to compactly supported measure curves and a better regularity of the flow matching velocity field. Second, a "quantile toolbox" for building generative models is presented: a unifying theory and a practical toolkit that turns latent noise selection into a data-driven design element.
+               We study generative modeling of discrete sequences in a
+continuous embedding space. We work on the sphere $\mathbb S^{d-1}$, where
+the von Mises-Fisher (vMF) distribution can be used to define a natural
+noise process. Leveraging vMFs radial symmetry, we reduce the continuity
+equation to a scalar ODE in cosine similarity and derive the conditional
+velocity. On $(\mathbb S^{d-1})^L$, both the marginal velocity and
+Riemannian score decompose into posterior-weighted tangent sums differing
+only by per-token scalars. The posterior is learned via cross-entropy. We
+sample using the probability flow ODE and a predictor-corrector scheme and
+compare the vMF path against alternative choices on Sudoku and language
+data.
             </p>
           </details>
         </td>
